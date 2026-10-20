@@ -57,6 +57,23 @@
 @keyframes duaGlow{50%{box-shadow:0 18px 65px #0004,0 0 38px #e4c58b24,inset 0 0 40px #e4c58b13}}
 @media(max-width:600px){.dua-panel{border-radius:65px 65px 18px 18px}.dua-panel:after{border-radius:58px 58px 12px 12px}.dua-arabic{font-size:clamp(1.4rem,6vw,1.95rem)!important;line-height:1.95!important}}
 @media(prefers-reduced-motion:reduce){.dua-panel{animation:none}}
+
+/* Mobile layout corrections: prevent ornament/header and floating audio overlap */
+.dua-panel{padding-top:clamp(60px,7vw,76px)!important}
+.dua-panel:before{top:19px!important;line-height:1!important}
+.dua-label{display:block;position:relative;z-index:1;line-height:1.7!important;letter-spacing:.15em!important;margin:0 auto 16px!important;max-width:100%;overflow-wrap:break-word}
+.dua-arabic{word-break:normal;overflow-wrap:normal;line-height:2.15!important}
+.footer{padding:26px 82px 32px 22px;line-height:1.8;overflow-wrap:break-word}
+@media(max-width:600px){
+ .dua-panel{width:min(92vw,460px);padding:65px 20px 30px!important;margin:18px auto 28px!important;border-radius:64px 64px 20px 20px}
+ .dua-panel:after{inset:8px;border-radius:57px 57px 14px 14px}
+ .dua-panel:before{top:19px!important;font-size:18px}
+ .dua-label{font-size:.58rem!important;letter-spacing:.105em!important;line-height:1.7!important;margin-bottom:18px!important}
+ .dua-arabic{font-size:clamp(1.42rem,6.1vw,2rem)!important;line-height:2.1!important;margin:8px auto 18px!important}
+ .dua-translation{font-size:clamp(1.15rem,4.7vw,1.4rem)!important;line-height:1.55!important}
+ .footer{padding:28px 85px 34px 18px;font-size:.61rem;letter-spacing:.08em;min-height:105px;text-align:center}
+ .audio{right:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));width:46px;height:46px}
+}
 </style></head><body class="locked"><canvas id="stars" aria-hidden="true"></canvas><div class="grain" aria-hidden="true"></div>
 <div class="intro" id="intro"><div class="intro-inner"><p class="intro-kicker">A special invitation awaits</p><button class="envelope" id="envelope" aria-label="Open wedding invitation"><span class="back"></span><span class="letter"><span>You're Invited</span></span><span class="left"></span><span class="right"></span><span class="bottom"></span><span class="flap"></span><span class="seal">U &amp; A</span></button><button class="tap" id="openBtn">✦ &nbsp; Open Invitation &nbsp; ✦</button><div class="intro-note">TAP THE ENVELOPE TO BEGIN</div></div></div>
 <main class="page" id="page"><section class="section hero"><div class="arch"></div><div class="floating-flower flower1">✺</div><div class="floating-flower flower2">✿</div><div class="floating-flower flower3">✧</div><div class="hero-content"><div class="moon intro-appear">☪</div><div class="arabic intro-appear" lang="ar">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div><div class="eyebrow intro-appear">Together with their families · The Nikkah of</div><h1 class="intro-appear"><span>S.B. Mohamed Usama</span><span class="amp" aria-label="and">♥</span><span>A. Arshidha</span></h1><div class="ornament">✦ ❈ ✦</div><div class="hero-date">Sunday · 27 December 2026 · 17 Rajab 1448</div><p style="margin:20px auto 0;font-size:.9rem;color:#dfcfb2">K.K. Mahal · Melapalayam, Tirunelveli</p></div><div class="scroll-hint">SCROLL TO DISCOVER ↓</div></section>
